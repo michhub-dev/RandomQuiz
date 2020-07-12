@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FIRST quiz</title>
+	<link rel="stylesheet" type="text/css" href="assignment.css">
+	<script src="Process.js" rel="script"></script>
+
+</head>
+<body>
+<div>
+<h4> QUIZ</h4>
+
+<form id="mf">
+	<fieldset class="frame" >
+		<p>How many colours are in Nigerian flag?</p>
+		<label class="container">
+			<input style="size: 20px" type="radio" name="flag" value="0"  onclick="ServerSide();" >1 <span class="checkmark"></span>
+		</label>
+		<label class="container">
+			<input type="radio" name="flag" value="1" onclick="ServerSide();" />2 <span class="checkmark"></span>
+		</label>
+		<label class="container">
+			<input type="radio" name="flag" value="0" onclick="ServerSide();" />3 <span class="checkmark"></span>
+		</label>
+		<label class="container">
+			<input type="radio" name="flag" value="0" onclick="ServerSide();" />4 <span class="checkmark"></span>
+		</label>
+		</fieldset>
+
+	<fieldset class="frame">
+		<p>Which of this part of the brain is central to the processing of fear and anxiety?</p>
+		<label class="container">
+		<input type="radio" name="brain" value="0" onclick="ServerSideTwo();" />Corpus callusum <span class="checkmark"></span>
+		</label>
+		<label class="container">
+		<input type="radio" name="brain" value="1" onclick="ServerSideTwo();" />Amygdala <span class="checkmark"></span>
+		</label>
+		<label class="container">
+		<input type="radio" name="brain" value="0" onclick="ServerSideTwo();" />Hippocampus<span class="checkmark"></span>
+		</label>
+		<label class="container">
+		<input name="brain" type="radio" value="0" onclick="ServerSideTwo();" />Occipital Lobe<span class="checkmark"></span>
+		</label>
+	</fieldset>
+
+	<fieldset class="frame">
+		<p>The word "personality" originates from the latin persona, which means?</p>
+		<label class="container">
+		<input type="radio" name="psy" value="0" onclick="ServerSideThree();" />Uniqueness<span class="checkmark"></span>
+		</label>
+		<label class="container">
+		<input type="radio" name="psy" value="0" onclick="ServerSideThree();" />Character <span class="checkmark"></span>
+		</label>
+		<label class="container">
+		<input type="radio" name="psy" value="1" onclick="ServerSideThree();" />Mask <span class="checkmark"></span>
+		</label>
+		<label class="container">
+		<input type="radio" name="psy" value="0" onclick="ServerSideThree();" />Trait<span class="checkmark"></span>
+		</label>
+
+	</fieldset>
+</form>
+	<input type="submit" class="bot" onclick="run();" />
+	<p id="mark"></p>
+</div>
+</body>
+</html>
